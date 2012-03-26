@@ -130,7 +130,7 @@
        </div>
         <div class="span4">
           <h2>Die Daten</h2>
-          <p>Als Quelle für die hier verwendeten Zahlen diente der <a href="http://www.lohnspiegel.de/main/LohnundGehaltsCheck">Lohn- und GehaltsCheck</a> samt seinen Informationen zu 300 Berufen.</p>
+          <p>Als Quelle für die hier verwendeten Zahlen diente der <a href="http://www.lohnspiegel.de/main/LohnundGehaltsCheck">Lohn- und GehaltsCheck</a> samt seinen Informationen zu 300 Berufen (letzte Aktualisierung vom 26.03.2012).</p>
           <p>Der LohnSpiegel ist unabhängig von kommerziellen Interessen und wird vom <a href="http://www.boeckler.de/index_wsi.htm">Wirtschafts- und Sozialwissenschaftlichen Institut der Hans-Böckler-Stiftung</a> betreut.</p>
           <p>Alle Daten stammen von den Beschäftigten selbst, nicht von ihren Arbeitgeber_innen.</p>
 
@@ -259,9 +259,6 @@
 
        </div>
     </div> <!-- /container -->
-
-    <!-- Dumb hack to give Pinterest bookmarklet an image, argh -->
-    <img src="http://narrowthegapp.com/images/narrow-the-gapp.jpg" style="visibility:hidden;"/>
 
     <!-- Le javascript
     ================================================== -->
@@ -409,7 +406,7 @@
                     var gap = gaps[gapNr];
                     listml += '<a href="?l=' + gapNr + '">' + gaps[gapNr].occupation + '</a><br>';
                 });
-                if((idx++ % Math.ceil(groups_length / 3)) == 0) {
+                if((idx++ % Math.round(groups_length / 3)) == 0) {
                     listml += '</div><div class="span4">';
                 }
             });
